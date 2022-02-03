@@ -1,10 +1,11 @@
 ﻿using System;
-namespace UnitTestingExercise
+
+namespace UnitTestingExercise.Tests
 {
-    public class UnitTestMethods
+   public class UnitTestingMethods
     {
         // Make sure your references are set properly
-            // Righ-click on Dependencies in your .Tests project and set your reference
+        // Righ-click on Dependencies in your .Tests project and set your reference
 
 
 
@@ -12,7 +13,7 @@ namespace UnitTestingExercise
 
         public int Add(int one, int two, int three)
         {
-            return one + two + three;   
+            return one + two + three;
         }
 
         // Create a Subtract method that passes 2 integers
@@ -23,7 +24,6 @@ namespace UnitTestingExercise
             return minuend - subtrhend;
         }
 
-           
         // Create a Multiply method that passes 2 integers
 
         public int Multiply(int num1, int num2)
@@ -38,20 +38,16 @@ namespace UnitTestingExercise
             return num1 / num2;
         }
 
-
-
         // Create 2 methods that will utilize the [Fact] tests you wrote
+
         public bool IsCharSymbol(char testChar)
         {
-            throw new NotImplementedException();
+            return char.IsSymbol(testChar);
         }
 
         public bool IsCharNotSymbol(char testChar)
         {
-            throw new NotImplementedException();
+            return char.IsLetterOrDigit(testChar);
         }
-
-
-
     }
 }
